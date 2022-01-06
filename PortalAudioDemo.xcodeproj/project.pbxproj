@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A10D86732784BA16008A4AAF /* bluebells.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A10D86722784BA16008A4AAF /* bluebells.m4a */; };
 		A1BFCA3D27847C5B00B00BB7 /* PortalAudioDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFCA3C27847C5B00B00BB7 /* PortalAudioDemoApp.swift */; };
-		A1BFCA3F27847C5B00B00BB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFCA3E27847C5B00B00BB7 /* ContentView.swift */; };
 		A1BFCA4127847C5D00B00BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1BFCA4027847C5D00B00BB7 /* Assets.xcassets */; };
 		A1BFCA4427847C5D00B00BB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1BFCA4327847C5D00B00BB7 /* Preview Assets.xcassets */; };
+		A1BFCA4B27847CC800B00BB7 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BFCA4A27847CC800B00BB7 /* Audio.swift */; };
+		A1F108CA27870F76004927E2 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F108C927870F76004927E2 /* Video.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A10D86722784BA16008A4AAF /* bluebells.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = bluebells.m4a; sourceTree = "<group>"; };
+		A10D86742785F88F008A4AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A1BFCA3927847C5B00B00BB7 /* PortalAudioDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortalAudioDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BFCA3C27847C5B00B00BB7 /* PortalAudioDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalAudioDemoApp.swift; sourceTree = "<group>"; };
-		A1BFCA3E27847C5B00B00BB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1BFCA4027847C5D00B00BB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1BFCA4327847C5D00B00BB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1BFCA4A27847CC800B00BB7 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		A1F108C927870F76004927E2 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +40,7 @@
 		A1BFCA3027847C5B00B00BB7 = {
 			isa = PBXGroup;
 			children = (
+				A10D86722784BA16008A4AAF /* bluebells.m4a */,
 				A1BFCA3B27847C5B00B00BB7 /* PortalAudioDemo */,
 				A1BFCA3A27847C5B00B00BB7 /* Products */,
 			);
@@ -51,10 +57,12 @@
 		A1BFCA3B27847C5B00B00BB7 /* PortalAudioDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A10D86742785F88F008A4AAF /* Info.plist */,
 				A1BFCA3C27847C5B00B00BB7 /* PortalAudioDemoApp.swift */,
-				A1BFCA3E27847C5B00B00BB7 /* ContentView.swift */,
 				A1BFCA4027847C5D00B00BB7 /* Assets.xcassets */,
 				A1BFCA4227847C5D00B00BB7 /* Preview Content */,
+				A1BFCA4A27847CC800B00BB7 /* Audio.swift */,
+				A1F108C927870F76004927E2 /* Video.swift */,
 			);
 			path = PortalAudioDemo;
 			sourceTree = "<group>";
@@ -126,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1BFCA4427847C5D00B00BB7 /* Preview Assets.xcassets in Resources */,
+				A10D86732784BA16008A4AAF /* bluebells.m4a in Resources */,
 				A1BFCA4127847C5D00B00BB7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1BFCA3F27847C5B00B00BB7 /* ContentView.swift in Sources */,
+				A1F108CA27870F76004927E2 /* Video.swift in Sources */,
 				A1BFCA3D27847C5B00B00BB7 /* PortalAudioDemoApp.swift in Sources */,
+				A1BFCA4B27847CC800B00BB7 /* Audio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +282,7 @@
 				DEVELOPMENT_TEAM = U355UULQVV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PortalAudioDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +312,7 @@
 				DEVELOPMENT_TEAM = U355UULQVV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PortalAudioDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
