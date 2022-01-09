@@ -21,8 +21,11 @@ class PlayerLayerView: UIView {
 
     let url = URL(string: "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8")!
     let player = AVPlayer(url: url)
-    player.play()
+    player.audiovisualBackgroundPlaybackPolicy = .pauses
+    player.allowsExternalPlayback = false
+    player.volume = 0.0
     player.isMuted = true
+    player.play()
 
     playerLayer.player = player
     layer.addSublayer(playerLayer)
